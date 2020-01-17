@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enquête</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+   <h1>Nous lançons une grande enquête sur les anciens stagiaires</h1>
+   <h5>Merci de nous répondre</h5>
+   <br>
+
+   <form method="POST">
+    <input type="text" name="nom"><label for="nom">Votre nom</label><br>
+    <input type="text" name="prenom"><label for="prenom">Votre prénom</label><br>
+    <input type="text" name="dateNaissance"><label for="dateNaissance">Votre date de naissance</label><br>
+    <input type="text" name="adresse"><label for="adressse">Votre adresse</label><br>
+    <input type="text" name="ville"><label for="ville">Votre ville</label><br>
+    <input type="text" name="codePostal"><label for="codePostal">Votre code postal</label><br>
+    <input type="text" name="email"><label for="email">Votre E-mail</label><br>
+    <hr>
+    <input type="radio" name="sex" value="homme">Vous êtes un homme
+    <input type="radio" name="sex" value="femme">Vous êtes une femme
+    <hr>
+    <select name="metier">
+        <option value="developpeur">Développeur</option>
+        <option value="analyste">Analyste</option>
+        <option value="chef">Chef de projet</option>
+        <option value="autre">Autre</option>
+    </select>
+    <input type="text" name="metier"><label for="metier">Si vous avez répondu autre, précisez</label>
+    <hr>
+    <select name="prix">
+        <option value="moins1000">&lt; 1000€</option>
+        <option value="moins1500">&gt; 1000 € et &lt; 1500€</option>
+        <option value="moins2000">&gt; 1500 € et &lt; 2000€</option>
+        <option value="plus2000">&gt; 2000€</option>
+    </select>
+    <hr>
+    <input type="text" name="annee"><label for="annee">En quelle année avez-vous suivi le stage AFPA ?</label>
+    <hr>
+    <textarea name="commentaire" id="" cols="100" rows="10" placeholder="Vos commentaires"></textarea>
+    <h2>Merci d'avoir répondu au questionnaire</h2>
+    <input type="submit" value="Validez"><input type="reset" value="Annulez">
+   </form>
+
+</body>
+</html>

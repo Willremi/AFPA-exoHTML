@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaires standards</title>
+</head>
+<body>
+    <form action="http://www.afpa.fr" method="get">
+        <p>
+            Entrez votre nom ...
+            <input type="text" name="le_nom">
+        </p>
+        <p>
+            Entrez votre e-mail ...
+            <input type="text" name="email">
+        </p>
+        <p><i>Quel micro-ordinateur utilisez-vous ?</i></p>
+        <ol>
+            <li><input type="checkbox" name="micro1" value="PC">PC</li>
+            <li><input type="checkbox" name="micro2" value="Mac">Mac</li>
+            <li><input type="checkbox" name="micro3" value="Unix">Station Ubix</li>
+        </ol>
+        <p><i>Média de distribution ?</i></p>
+        <ol>
+            <li><input type="radio" name="media" value="Cd" checked="checked">CD-ROM</li>
+            <li><input type="radio" name="media" value="Dk">Disquette</li>
+        </ol>
+        <p><input type="submit" value="Validez"></p>
+    </form>
+</body>
+</html>
